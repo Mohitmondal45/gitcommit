@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Management</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        /* Add more styles based on your design */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Restaurant Management System</h1>
+    </header>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li>Pizza - $12.99</li>
+            <li>Pasta - $9.99</li>
+            <li>Burger - $8.99</li>
+            <!-- Add more menu items -->
+        </ul>
+    </section>
+
+    <section id="order">
+        <h2>Place an Order</h2>
+        <!-- Order form goes here -->
+    </section>
+
+    <section id="reservation">
+        <h2>Reservations</h2>
+        <!-- Reservation form goes here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Restaurant Management System</p>
+    </footer>
+
+   <!-- Add your JavaScript logic here -->
+<script>
+    // Function to handle order submission
+    function submitOrder() {
+        // Get values from the order form
+        const itemName = document.getElementById('item').value;
+        const quantity = document.getElementById('quantity').value;
+
+        // Perform some validation if needed
+
+        // Display a confirmation message (this can be more complex in a real system)
+        alert(`Order Placed: ${quantity} ${itemName}(s)`);
+    }
+
+    // Function to handle reservation submission
+    function submitReservation() {
+        // Get values from the reservation form
+        const reservationDate = document.getElementById('reservation-date').value;
+        const partySize = document.getElementById('party-size').value;
+
+        // Perform some validation if needed
+
+        // Display a confirmation message (this can be more complex in a real system)
+        alert(`Reservation Confirmed for ${partySize} people on ${reservationDate}`);
+    }
+</script>
+
+
+</body>
+</html>
